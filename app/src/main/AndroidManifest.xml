@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest package="com.commonsware.todo"
   xmlns:android="http://schemas.android.com/apk/res/android">
+  <supports-screens
+    android:largeScreens="true"
+    android:normalScreens="true"
+    android:smallScreens="true"
+    android:xlargeScreens="true"/>
 
   <application
     android:allowBackup="true"
