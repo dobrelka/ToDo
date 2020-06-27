@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     toolbar.title = getString(R.string.app_name)
     toolbar.inflateMenu(R.menu.actions)
 
-    toolbar2.setOnMenuItemClickListener {item ->
+    toolbar.setOnMenuItemClickListener {item ->
       when (item.itemId) {
         R.id.about -> startActivity(Intent(this, AboutActivity::class.java))
         else -> return@setOnMenuItemClickListener false
